@@ -26,5 +26,27 @@
       const href = a.getAttribute("href");
       if (href === path) a.setAttribute("aria-current", "page");
     });
+
+    const nav = document.querySelector(".nav");
+    const toggle = document.querySelector(".nav-toggle");
+    if (nav && toggle) {
+      const setOpen = (open) => {
+        nav.toggleAttribute("data-nav-open", open);
+        toggle.setAttribute("aria-expanded", String(open));
+        toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+      };
+      toggle.addEventListener("click", () => {
+        setOpen(!nav.hasAttribute("data-nav-open"));
+      });
+      nav.querySelectorAll(".nav-links a").forEach((a) => {
+        a.addEventListener("click", () => setOpen(false));
+      });
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && nav.hasAttribute("data-nav-open")) {
+          setOpen(false);
+          toggle.focus();
+        }
+      });
+    }
   });
 })();
