@@ -545,7 +545,7 @@ html[data-bg="light"] .hero-editorial .mark-stage::after {
   position: relative;
   z-index: 2;
   display: block;
-  height: clamp(224px, 29vw, 434px);
+  height: clamp(320px, 40vw, 580px);
   width: auto;
   /* Solid near-black silhouette, with the corona reading as light spilling around the edges. */
   fill: #030305;
