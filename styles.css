@@ -544,20 +544,13 @@ html[data-bg="light"] .hero-editorial .mark-stage::after {
 .hero-editorial .mark-stage .big-z {
   position: relative;
   z-index: 2;
-  /* Italiana — thin Didone-style serif, refined elegant proportions */
-  font-family: "Italiana", "Cormorant Garamond", serif;
-  font-weight: 400;
-  font-size: clamp(320px, 42vw, 620px);
-  line-height: 1;
-  letter-spacing: -0.04em;
   display: block;
-  padding-block: 0;
-  transform: translateY(-0.06em);
+  height: clamp(224px, 29vw, 434px);
+  width: auto;
   /* Solid near-black silhouette, with the corona reading as light spilling around the edges. */
-  color: #030305;
-  /* Faint silver inner edge so the silhouette doesn't read flat against the corona */
-  -webkit-text-stroke: 0.5px rgba(216,218,223,0.55);
-          text-stroke: 0.5px rgba(216,218,223,0.55);
+  fill: #030305;
+  stroke: rgba(216,218,223,0.55);
+  stroke-width: 0.5;
   /* outward halo glow — light coming from behind */
   filter:
     drop-shadow(0 0 12px rgba(255,255,255,0.45))
@@ -567,9 +560,8 @@ html[data-bg="light"] .hero-editorial .mark-stage::after {
   user-select: none;
 }
 html[data-bg="light"] .hero-editorial .mark-stage .big-z {
-  color: #050507;
-  -webkit-text-stroke: 0.5px rgba(15,16,26,0.45);
-          text-stroke: 0.5px rgba(15,16,26,0.45);
+  fill: #050507;
+  stroke: rgba(15,16,26,0.45);
   filter:
     drop-shadow(0 0 14px rgba(255,255,255,0.95))
     drop-shadow(0 0 36px rgba(255,255,255,0.55))
