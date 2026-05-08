@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en" data-bg="light" data-accent="pure">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Zbaraschuk Innovations</title>
+<meta name="description" content="Start a conversation with Zbaraschuk Innovations.">
+<link rel="icon" type="image/png" href="assets/logo-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Manrope:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="shell nav-inner">
+    <a href="index.html" class="nav-brand">
+      <span class="mark" aria-hidden="true"></span>
+      <span class="name">Zbaraschuk <em>Innovations</em></span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="mission.html">Mission</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <a href="#contact-form" class="btn"><span>Send a message</span><span class="arr">↗</span></a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="page-header">
+    <div class="shell">
+      <div class="crumbs reveal"><span>03 /</span> &nbsp; Contact</div>
+      <h1 class="reveal" style="--delay:80ms">Start a<br><span class="it">conversation.</span></h1>
+      <div class="meta reveal" style="--delay:200ms">
+        <span>Tell us about a system that should work better</span>
+        <span class="right">Seattle, WA</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="shell">
+    <div class="contact-grid">
+      <!-- INFO COLUMN -->
+      <div class="contact-info reveal">
+        <div class="group">
+          <span class="label">Inquiries</span>
+          <span class="val">Use the form &nbsp;<span style="color:var(--silver-2)">→</span></span>
+          <span class="hint">For general inquiries, partnerships, and project conversations &mdash; the form below routes directly to the studio.</span>
+        </div>
+
+        <div class="group">
+          <span class="label">Studio</span>
+          <span class="val">Seattle, Washington</span>
+          <span class="hint">Pacific time. By appointment.</span>
+        </div>
+
+        <div class="group">
+          <span class="label">Web</span>
+          <a class="val" href="https://zbarinnovation.com">zbarinnovation.com</a>
+        </div>
+
+        <div class="group" style="border-bottom:0">
+          <span class="label">Hours</span>
+          <span class="val" style="font-size:18px;font-family:var(--font-sans);font-weight:300;line-height:1.5">
+            Mon – Fri &nbsp;·&nbsp; 9:00 – 17:00 PT
+          </span>
+        </div>
+
+        <div class="mini-map" aria-hidden="true">
+          <svg viewBox="0 0 600 220" preserveAspectRatio="none">
+            <defs>
+              <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(216,218,223,0.08)" stroke-width="1"/>
+              </pattern>
+            </defs>
+            <rect width="600" height="220" fill="url(#grid)"/>
+            <path d="M 0 130 Q 80 110 160 125 T 320 132 T 480 124 T 600 138" stroke="rgba(216,218,223,0.18)" fill="none" stroke-width="1"/>
+            <path d="M 0 156 Q 90 140 180 152 T 360 160 T 540 154 T 600 162" stroke="rgba(216,218,223,0.10)" fill="none" stroke-width="1"/>
+          </svg>
+          <span class="pin"></span>
+          <span class="label">Seattle, WA</span>
+        </div>
+      </div>
+
+      <!-- FORM COLUMN -->
+      <form class="form reveal" style="--delay:120ms" id="contact-form" novalidate>
+        <div class="form-head">
+          <h3>Send a message</h3>
+          <span class="stamp">FORM / 01</span>
+        </div>
+
+        <div class="field-row">
+          <div class="field" data-name="name">
+            <label for="f-name">Name</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" placeholder="Your full name" required>
+            <span class="err" aria-live="polite"></span>
+          </div>
+          <div class="field" data-name="email">
+            <label for="f-email">Email</label>
+            <input id="f-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+            <span class="err" aria-live="polite"></span>
+          </div>
+        </div>
+
+        <div class="field" data-name="subject">
+          <label for="f-subject">Subject</label>
+          <input id="f-subject" name="subject" type="text" placeholder="What is this about?">
+          <span class="err" aria-live="polite"></span>
+        </div>
+
+        <div class="field" data-name="message">
+          <label for="f-message">Message</label>
+          <textarea id="f-message" name="message" placeholder="Tell us about the system, the friction, and what 'better' would look like." required></textarea>
+          <span class="err" aria-live="polite"></span>
+        </div>
+
+        <div class="form-actions">
+          <span class="small">All fields marked are required</span>
+          <button type="submit" class="submit-btn">
+            <span>Send message</span>
+            <span aria-hidden="true">↗</span>
+          </button>
+        </div>
+
+        <div class="success" id="form-success" hidden>
+          <h4>Your email client is opening.</h4>
+          <p>If nothing appears, your browser may not have a default mail handler. You can also reach us via your preferred email client — the studio responds personally to every message.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="shell">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="mark"></div>
+        <div class="name">Zbaraschuk Innovations</div>
+        <p>Elegant solutions to real-world problems through innovation, design, and strategic thinking.</p>
+      </div>
+      <div class="footer-col">
+        <h6>Site</h6>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="mission.html">Mission</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h6>Connect</h6>
+        <ul>
+          <li><a href="contact.html">Send a message</a></li>
+          <li><span style="color:var(--fg-2)">Seattle, WA</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Zbaraschuk Innovations LLC</span>
+      <span>zbarinnovation.com</span>
+    </div>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+<script>
+(function () {
+  const form = document.getElementById("contact-form");
+  if (!form) return;
+  const success = document.getElementById("form-success");
+  const submit = form.querySelector(".submit-btn");
+  const fields = form.querySelectorAll(".field");
+
+  function setErr(field, msg) {
+    field.classList.toggle("invalid", !!msg);
+    const err = field.querySelector(".err");
+    if (err) err.textContent = msg || "";
+  }
+  function validate() {
+    let ok = true;
+    fields.forEach((f) => {
+      const input = f.querySelector("input, textarea");
+      if (!input) return;
+      const name = f.dataset.name;
+      const v = input.value.trim();
+      let msg = "";
+      if (input.required && !v) msg = "Required";
+      else if (name === "email" && v && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)) msg = "Enter a valid email";
+      setErr(f, msg);
+      if (msg) ok = false;
+    });
+    return ok;
+  }
+  form.addEventListener("input", (e) => {
+    const f = e.target.closest(".field");
+    if (f && f.classList.contains("invalid")) {
+      const input = f.querySelector("input, textarea");
+      if (input && input.value.trim()) setErr(f, "");
+    }
+  });
+  // Light obfuscation — assembled at submit time so the address isn't a single
+  // contiguous string anywhere in the page source.
+  const TO = ["contactus", "zcheck.org"].join("@");
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    if (!validate()) return;
+
+    const name    = form.querySelector("#f-name").value.trim();
+    const email   = form.querySelector("#f-email").value.trim();
+    const subject = form.querySelector("#f-subject").value.trim() || "Inquiry from zbarinnovation.com";
+    const message = form.querySelector("#f-message").value.trim();
+
+    const body = [
+      message,
+      "",
+      "—",
+      `From: ${name} <${email}>`,
+    ].join("\r\n");
+
+    const href = `mailto:${TO}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    submit.disabled = true;
+    submit.querySelector("span").textContent = "Opening…";
+    window.location.href = href;
+
+    // Reveal the success state shortly after — the mail client launch happens
+    // out-of-band and won't navigate the page away.
+    setTimeout(() => {
+      form.querySelectorAll(".field, .form-actions").forEach((el) => el.style.display = "none");
+      form.querySelector(".form-head").style.display = "none";
+      success.hidden = false;
+    }, 600);
+  });
+})();
+</script>
+</body>
+</html>
