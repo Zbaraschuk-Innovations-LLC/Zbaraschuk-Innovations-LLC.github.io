@@ -1083,7 +1083,8 @@ html[data-bg="light"] .hero-monolith .giantZ span {
 .form .submit-btn:hover { transform: translateY(-1px); }
 .form .submit-btn[disabled] { opacity: 0.6; cursor: progress; }
 
-.form .success {
+.form .success { display: none; }
+.form .success:not([hidden]) {
   border: 1px solid var(--silver-2);
   padding: 22px;
   display: grid; gap: 8px;
